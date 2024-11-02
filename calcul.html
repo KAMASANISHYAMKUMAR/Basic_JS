@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <input type="text" placeholder="Result" id="r1" onclick="styles()"><br><br>
+        <button onclick="cal('1')">1</button>
+        <button onclick="cal('2')">2</button>
+        <button onclick="cal('3')">3</button>
+        <button onclick="cal('4')">4</button><br><br>
+        <button onclick="cal('5')">5</button>
+        <button onclick="cal('6')">6</button>
+        <button onclick="cal('7')">7</button>
+        <button onclick="cal('8')">8</button><br><br>
+        <button onclick="cal('9')">9</button>
+        <button onclick="cal('0')">0</button>
+        <button onclick="cal('+')">+</button>
+        <button onclick="cal('-')">-</button><br><br>
+        <button onclick="cal('*')">*</button>
+        <button onclick="cal('/')">/</button>
+        <button onclick="cal('.')">.</button>
+        <button onclick="result()">=</button>
+        <button onclick="cls()">clear</button>
+        <style>
+            #r1{
+                background-color: rgb(107, 111, 111);
+                height: 40px
+
+            }
+            button:hover{
+                background-color:rgb(38, 195, 127);
+                color: bisque;
+            }
+        </style>
+        <script>
+            let cal=(x)=>{
+                document.querySelector("#r1").value +=x
+                document.querySelector("#r1").style.color="gold"
+            }
+            let result=()=>{
+                let x=eval(document.querySelector("#r1").value)
+                document.querySelector("#r1").value=x;
+            }
+            let cls=()=>{
+                document.querySelector("#r1").value=""
+            }
+
+        </script>
+    </body>
+</html>

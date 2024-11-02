@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <img src="images/person_2.jpg" id="img1",width="200px">
+        <script>
+            //value properties get value
+            let imgpath=document.querySelector("#img1").getAttribute('src')
+            document.write(imgpath)
+            let imgwidth=document.querySelector("#img1").getAttribute('width')
+            document.write(imgwidth)
+            //set value
+            document.querySelector("#img1").setAttribute("src","images/person_1.jpg")
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        username:<input type="text" id="p1" placeholder="user name" onfocus="validation()" onblur="validation1()"><br>
+        <span id="count">atlest one number,symbol,capitalletter</span>
+        <script>
+            //onkeyup event
+            let validation =() =>{
+                document.querySelector("#count").style.display="inline"
+                document.querySelector("#count").style.color="red"
+            }
+                let validation1=()=>{
+                    document.querySelector("#count").style.display="none"
+                }
+        </script>
+    </body>
+</html>

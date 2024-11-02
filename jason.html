@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+          //json object
+          let student={
+              sfname:"shyam",
+              slname:"kumar",
+              sno:219,
+              sage:21,
+              sbranch:"EEE",
+          }
+          console.log(student)
+          //json object to json string
+          let s1=JSON.stringify(student)
+          console.log(s1)
+          
+          //json string to json object
+          let s2=JSON.parse(s1)
+          console.log(s2)
+        </script>
+    </body>
+</html>

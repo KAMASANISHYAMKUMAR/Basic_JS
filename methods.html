@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1 id="h1">hello welcome to java script</h1>
+        <h2 class="p1">about js</h2>
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, provident!</p>
+        
+        <script>
+            //access element by tag name
+            let title=document.getElementsByTagName("h1")
+            console.log(title)
+            console.log(title.length)
+            //access element by id name
+            let idname=document.getElementById("h1")
+            console.log(idname)
+            console.log(idname.length)
+            //access element by queryselector
+            let query=document.querySelector("p1")
+            console.log(query)
+        </script>
+    </body>
+</html>

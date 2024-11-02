@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script>
+let num=[20,10,50,80,90,40,30]
+
+
+console.log(num);
+
+
+for( i=0; i<=7;i++)
+{
+
+console.log(num[i]);
+}
+
+
+// //inserting elements
+//push
+num.push(100)
+console.log(num)
+//     //unshift
+num.unshift(5)
+console.log(num)
+//     //splice
+num.splice(1,0,6,7,8)
+    console.log(num)
+// //deleting elements
+//     //pop
+num.pop(100)
+console.log(num)
+//     //shift
+num.shift()
+console.log(num)
+//     //splice
+num.splice(0,3)
+console.log(num)
+// //ascending and decending
+//   //ascending
+num.sort()
+console.log(num)
+//   //descending
+num.sort().reverse()
+console.log(num)
+// //concatenatiton
+let even=[2,4,6,8,10,12,14,16,18,20]
+let odd=[1,3,5,7,9,11,13,15,17,19]
+let allnum=even.concat(odd)
+console.log(allnum)
+</script>
+</body>
+</html>

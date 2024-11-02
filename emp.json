@@ -1,0 +1,12 @@
+[
+    {
+        "empname":"shyam",
+        "empno":219,
+        "empdesignition":"PE"
+    },
+    {
+        "empnumber":1234564758,
+        "empcity":"hyderabad",
+        "emppincode":468745
+    }
+]

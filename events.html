@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        password:<input type="password" id="p1" onkeyup="validation()"><br>
+        strength:<span id="count"></span>
+        <script>
+            //onkeyup event
+            let validation =() =>{
+                let msg=document.querySelector("#p1").value
+                if(msg.length>6){
+                    document.querySelector("#count").innerHTML="good"
+                    document.querySelector("#count").style.color="green"
+                }
+                else if(msg.length>1){
+                    document.querySelector("#count").innerHTML="poor"
+                    document.querySelector("#count").style.color="red"
+                }
+                else{
+                }
+                }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, natus!</p>
+        <p id="p1"></p>
+        <h1>about js</h1>
+        <h2 id="p2"></h2>
+        <script>
+            //dom html properties
+            //innerhtml
+            let para=document.querySelector("p").innerHTML
+            console.log(para)
+            let p3=document.querySelector("#p1").innerHTML=para
+            console.log(p3)
+            //innertext
+            let para1=document.querySelector("h1").innerText
+            console.log(para1)
+            let h3=document.querySelector("h2").innerText=para1
+            console.log(h3)
+        </script>
+
+    </body>
+</html>

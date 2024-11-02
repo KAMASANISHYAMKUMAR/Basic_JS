@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        //normal function
+            function sum(){
+            let x=100
+            let y=200
+            let z=x+y
+            console.log(z)
+            }
+            sum()
+        //function with expression
+            let message=function(){
+                let name="shyam"
+                let name1='nag'
+                console.log(`name is:${name},name1 is:${name1}`)
+            }
+            message()
+        //arrow function
+            let price =() =>{
+                let qty=100;
+                let price=2000;
+                let total=qty*price
+                console.log(`qty is:${qty},price is:${price},total is:${total}`)
+            }
+            price()
+        //function with parameter
+            let pnumber=(first,last,step)=>{
+                for(i=first;i<=last;i+=step){
+                    console.log(i)
+                }
+            }
+            pnumber(0,100,5)
+    </script>
+</body>
+</html>
+

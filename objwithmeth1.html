@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            let emp={
+                empno:101,
+                name:'sai',
+                sal:5000,
+                job:'hr',
+            address:{
+                city:'hyd',
+                pincode:500085,
+                state:'ts'
+            },
+            account:{
+                saving:{
+                    type:'saving',
+                    balance:5000,
+                    account:123456,
+                },
+                current:{
+                    account:789456,
+                    type:'current',
+                    balance:50034
+                },
+                }
+            }
+            console.log(emp.address.state)
+            console.log(emp.account.saving.type)
+            console.log(emp.account.current.type)
+            //destructuring
+            let {name,job}=emp
+            console.log(`name:${name},job:${job}`)
+            let {type,balance}=emp.account.saving
+            console.log(`type:${type},balance:${balance}`)
+        </script>
+    </body>
+</html>
